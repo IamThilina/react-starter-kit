@@ -1,0 +1,80 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.css';
+
+.footer {
+  background: #242729;
+  color: white;
+}
+.footer-body-upper{
+  padding-top: 3%;
+}
+
+.footer a {
+  color: #D4D4D5;
+}
+.copyright-section a{
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.footer .footer-header {
+  font-size: 18px;
+  margin-bottom: 6%;
+  color: white;
+  font-weight: 700;
+}
+.footer #u_0_3{
+  color: white;
+}
+.footer .col-md-2 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.footer .footer-link {
+  color: #959697;
+}
+.footer ul
+{
+  list-style-type: none;
+  padding: 0px;
+}
+.copyright-section{
+  border-top: #8FCEF5;
+  border-top-style: solid;
+  border-top-width: 1px;
+  margin-left: 4%;
+  margin-right: 4%;
+  padding-top: 2%;
+  color: #D4D4D5;
+}
+#subscriptionModal .modal-dialog{
+  width: 33%;
+  margin-top: 10%;
+}
+#subscriptionModal .elf-textBox{
+  color: #959697;
+  width: 68%;
+}
+.copyright-ELF{
+  padding-left: 16%;
+
+}
+.powerd-by{
+  color: white;
+}
+.copyright-elf{
+  color: white;
+}
+.email-subscription{
+  color: #8FCEF5 !important;
+}
+
+.privacy-policy{
+
+}
+
+@media only screen and (max-width : 992px) {
+  .copyright-ELF{
+    padding-left: 2%;
+  }
+}

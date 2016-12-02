@@ -1,0 +1,121 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+:root {
+
+  /*
+   * Colors
+   * ======================================================================== */
+
+  --white-base:            hsl(255, 255, 255);
+  --gray-darker:           color(black lightness(+13.5%)); /* #222 */
+  --gray-dark:             color(black lightness(+25%));   /* #404040 */
+  --gray:                  color(black lightness(+33.5%)); /* #555 */
+  --gray-light:            color(black lightness(+46.7%)); /* #777 */
+  --gray-lighter:          color(black lightness(+93.5%)); /* #eee */
+  --header-background: #388E3C;
+
+
+  --primary-blue:          #5ab1e8;
+  --primary-blue-light:    #d5eeff;
+  --primary-blue-dark:     #1b435d;
+
+  --primary-action:        #ff895D;
+  --primary-action-dark:   #EF6B3A;
+  --primary-action-active: #E25B29;
+
+  --border--gray:         #D4D3D3;
+  --bright-grey:    #EBEBEB;
+  --more-lighter-dark:    #959595;
+  --lighter-dark:          #4e4e4e;
+  --light-dark:           #292929;
+  --search--panel--background: #F3F4F5;
+
+  /*Primary actions 1 colours*/
+  --primary-actions-1-default-fill: #ff895D;
+  --primary-actions-1-default-text: #ffffff;
+
+  --primary-actions-1-hover-fill:   #EF6B3A;
+  --primary-actions-1-hover-text:   #ffffff;
+
+  --primary-actions-1-active-fill:  #E25B29;
+  --primary-actions-1-active-text:  #FFD0BF;
+
+  --primary-actions-1-disabled-fill:  #FFDBCE;
+  --primary-actions-1-disabled-text:  #F4B59F;
+
+  /*Primary actions 2 colours*/
+  --primary-actions-2-default-fill: #ffffff;
+  --primary-actions-2-default-border:#ff895D;
+  --primary-actions-2-default-text: #ff895D;
+
+  --primary-actions-2-hover-fill:   #FFEBE3;
+  --primary-actions-2-hover-border:#EF6B3A;
+  --primary-actions-2-hover-text:   #EF6B3A;
+
+  --primary-actions-2-active-fill:  #FFC5AF;
+  --primary-actions-2-active-border:#E25B29;
+  --primary-actions-2-active-text:  #E25B29;
+
+  --primary-actions-2-disabled-fill:  #ffffff;
+  --primary-actions-2-disabled-border:#FFDBCE;
+  --primary-actions-2-disabled-text:  #FFDBCE;
+
+  /*Secondry actions 1 colours*/
+  --secondry-actions-1-default-fill: #5ab1e8;
+  --secondry-actions-1-default-text: #ffffff;
+
+  --secondry-actions-1-hover-fill:   #268CCC;
+  --secondry-actions-1-hover-text:   #ffffff;
+
+  --secondry-actions-1-active-fill: #1377B6;
+  --secondry-actions-1-active-text:  #8fd3fe;
+
+  --secondry-actions-1-disabled-fill:  #B0DCF8;
+  --secondry-actions-1-disabled-text:  #94B5CA;
+
+  /*Social media btns colours*/
+  --social-media-icon-default:   #6692AE;
+  --social-media-icon-hover:     #386E90;
+  --social-media-icon-active:    #235778;
+  --social-media-icon-disabled:  #D8E2E8;
+
+  /*primary text link colours*/
+  --primary-text-link-default:   #6692AE;
+  --primary-text-link-hover:     #268CCC;
+  --primary-text-link-active:    #1377B6;
+  --primary-text-link-disabled:  #B0DCF8;
+
+  /*secondry text link colours*/
+  --secondry-text-link-default:   #1B435D;
+  --secondry-text-link-hover:     #268CCC;
+  --secondry-text-link-active:    #1377B6;
+  --secondry-text-link-disabled:  #D8e2E8;
+  /*
+   * Typography
+   * ======================================================================== */
+
+  --font-family-base:      'Segoe UI', 'HelveticaNeue-Light', sans-serif;
+
+
+  /*
+   * Layout
+   * ======================================================================== */
+
+  --max-content-width:     1000px;
+
+  /*
+   * Media queries breakpoints
+   * ======================================================================== */
+
+  --screen-xs-min:         480px;  /* Extra small screen / phone */
+  --screen-sm-min:         768px;  /* Small screen / tablet */
+  --screen-md-min:         992px;  /* Medium screen / desktop */
+  --screen-lg-min:         1200px; /* Large screen / wide desktop */
+
+  /*
+   * Animations
+   * ======================================================================== */
+
+  --animation-swift-out:   .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;
+
+}

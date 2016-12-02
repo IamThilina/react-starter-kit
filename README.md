@@ -1,13 +1,11 @@
-## Educate Lanka Foundation WebDev 
+## React Starter Kit
 
 ### Documentation
 
   * **General**
     - [React Style Guide](./docs/react-style-guide.md)
     - [How to configure text editors and IDEs](./docs/how-to-configure-text-editors.md)
-  * **Questions**
-    - [Which module bundler should I use?](https://github.com/kriasoft/react-starter-kit/issues/3)
-    - [Which Flux implementation should I use?](https://github.com/kriasoft/react-starter-kit/issues/22)
+
   * **Recipes**
     - [How to Implement Routing and Navigation](./docs/recipes/how-to-implement-routing.md)
     - [How to Integrate Disqus](./docs/recipes/how-to-integrate-disqus.md)
@@ -27,7 +25,6 @@
 │   ├── /constants/             # Constants (action types etc.)
 │   ├── /core/                  # Core components (Flux dispatcher, base classes, utilities)
 │   ├── /decorators/            # Higher-order React components
-│   ├── /frisby/                # API end-point test specs
 │   ├── /__tests__/             # jest test files
 │   ├── /models/                # data models (db entities)
 │   ├── /public/                # Static files which are copied into the /build/public folder
@@ -57,8 +54,8 @@
 Just clone the repo and start developing:
 
 ```shell
-$ git clone -o ELFWebDev  -b develop --single-branch \https://github.com/educatelanka/elf-leapset-web.git ELF
-$ cd ELF
+$ git clone -o react-starter-kit  -b develop --single-branch \https://github.com/IamThilina/react-starter-kit.git react-starter-kit
+$ cd react-starter-kit
 $ npm install                   # Install Node.js components listed in ./package.json
 $ npm start                     # Compile and launch
 ```
@@ -81,20 +78,6 @@ $ npm start                     # or, `npm start -- --release`
 
 This will start a light-weight development server with "live reload" and
 synchronized browsing across multiple devices and browsers.
-
-### How to Update
-
-You can always fetch and merge recent changes from this repo back into
-your own project: 
-
-```shell
-$ git checkout develop
-$ git add .
-$ git commit -m "[ELF-(no)] - Commit Message"
-$ git pull ELFWebDev develop
-$ git push ELFWebDev develop
-$ npm install
-```
 
 ### Webpack Configurations
 As we are developing a multi page web app all React components for **one page** should bundle as **one**.
@@ -147,38 +130,3 @@ $ npm run deploy                # or, `npm run deploy -- --production`
 ```
 
 For more information see `tools/deploy.js`.
-
-
-### How to Unit Test
-
-Run unit tests powered by [Jest](https://facebook.github.io/jest/) with the following
-[npm](https://www.npmjs.org/doc/misc/npm-scripts.html) command:
-
-```shell
-$ npm test
-```
-
-Test any javascript module by creating a file at `__tests__/` directory. Append `-test.js` to the filename and [Jest](https://facebook.github.io/jest/) will do the rest.
-
-### How to Test API
-
-Run API tests powered by [Frisby Js](http://frisbyjs.com/) with the following
-[npm](https://www.npmjs.org/doc/misc/npm-scripts.html) command:
-
-```shell
-$ cd frisby
-$ jasmine-node test_spec.js
-```
-
-Test any API end point by creating a file at `frisby/` directory. Append `_spec.js` to the filename
-### Team
-
-  * [Mirunaaliny S Iyer](mailto:msomasunthara@leapset.com)
-  * [Dinidu de Silva](mailto:dinidu@leapset.com)
-  * [Thisara Amaradasa](mailto:thisara@leapset.com)
-  * [Roshan Wettesinghe](mailto:roshanw@leapset.com)
-  * [Chinthaka Gamage](mailto:chinthakag@leapset.com)
-  * [Asanka Hettiarachchi](mailto:asankah@leapset.com)
-  * [Sasitha Sonnadara](mailto:sasithas@leapset.com)
-  * [Sudaraka Abeywardena](mailto:sudarakaa@leapset.com)
-

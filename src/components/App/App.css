@@ -1,0 +1,430 @@
+@import '../../../node_modules/normalize.css/normalize.css';
+
+/*! React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.css';
+
+/*
+ * Base styles
+ * ========================================================================== */
+@import '../../components/variables.css';
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: condenced;
+  src: url('../../public/fonts/DIN-Condensed-Bold.ttf');
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #1b435d;
+}
+
+h3 {
+  color: #5ab1e8 ;
+}
+
+h4 {
+  color: #2D3438 ;
+  font-size: 22px;
+}
+
+a {
+  color: #292929 ;
+}
+.elf-italic{
+  font-style: italic;
+}
+.elfText-thin100{
+  font-weight: 100;
+}
+.elfText-light300{
+  font-weight: 300;
+}
+.elfText-bold400{
+  font-weight: 400;
+}
+.elfText-bold700{
+  font-weight: 700;
+}
+.elfText-bold800{
+  font-weight: 800;
+}
+.elfText-bold900{
+  font-weight: 900;
+}
+.primary-link{
+  color: var(--primary-text-link-default);
+}
+.primary-link:hover{
+  color: var(--primary-text-link-hover);
+}
+.primary-link:active{
+  color: var(--primary-text-link-active);
+}
+.primary-link:disabled{
+  color: var(--primary-text-link-disabled);
+}
+
+.elf-header{
+  height: 110px;
+  background-color: var(--primary-blue);
+}
+
+.elf-btn-xl {
+  width: 310px;
+  height: 58px;
+  padding: 8px 30px;
+  font-size: 19.5pt;
+  font-weight: 600;
+  letter-spacing: -.5pt;
+}
+.elf-btn-lg {
+  width: 207px;
+  height: 55px;
+  font-size: 17pt;
+  font-weight: 700;
+}
+
+.elf-btn {
+  text-align: center;
+  border-radius: 35px;
+  background-color: var(--primary-actions-1-default-fill);
+  color: var(--primary-actions-1-default-text);
+}
+
+.elf-btn:hover {
+  background-color: var(--primary-actions-1-hover-fill);
+  color: var(--primary-actions-1-hover-text);
+  border-color: var(--primary-actions-1-hover-fill);
+}
+.elf-btn:active, .elf-btn:active:hover, .elf-btn:focus, .elf-btn:checked {
+  background-color: var(--primary-actions-1-active-fill);
+  color: var(--primary-actions-1-active-text);
+  border-color: var(--primary-actions-1-active-fill);
+  outline: none !important;
+}
+.elf-btn:disabled {
+  background-color: var(--primary-actions-1-disabled-fill);
+  color: var(--primary-actions-1-disabled-text);
+  border-color: var(--primary-actions-1-disabled-fill);
+}
+
+.elf-action-btn{
+  border: 1px;
+  border-style: solid;
+  border-radius: 30px;
+  color: var(--primary-actions-2-default-text);
+  background-color: var(--primary-actions-2-default-fill);
+  border-color: var(--primary-actions-2-default-border);
+  padding-right: 24px;
+  padding-left: 25px;
+  text-transform: none;
+  font-size: 25px;
+}
+
+.elf-action-btn:hover{
+  color: var(--primary-actions-2-hover-text);
+  background-color: var(--primary-actions-2-hover-fill);
+  border-color: var(--primary-actions-2-hover-border);
+}
+.elf-action-btn:active, .elf-action-btn:focus, .elf-action-btn:active:hover{
+  color: var(--primary-actions-2-active-text);
+  background-color: var(--primary-actions-2-active-fill);
+  border-color: var(--primary-actions-2-active-border);
+}
+
+.btn-primary {
+  text-align: center;
+  border-radius: 25px;
+  background-color: var(--secondry-actions-1-default-fill);
+  color: var(--secondry-actions-1-default-text);
+  border-color: var(--secondry-actions-1-default-fill) ;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondry-actions-1-hover-fill);
+  color: var(--secondry-actions-1-hover-text);
+  border-color: var(--secondry-actions-1-hover-fill) ;
+}
+
+.btn-primary:active, .btn-primary:active:hover, .btn-primary:focus, .btn-primary:checked {
+  background-color: var(--secondry-actions-1-active-fill);
+  color: var(--secondry-actions-1-active-text);
+  border-color: var(--secondry-actions-1-active-fill) ;
+  outline: none !important;
+}
+.btn-primary:disabled {
+  background-color: var(--secondry-actions-1-disabled-fill);
+  color: var(--secondry-actions-1-disabled-text);
+  border-color: var(--secondry-actions-1-disabled-fill) ;
+}
+
+.elf-textBox{
+  border-radius: 25px;
+  border-color: black;
+  border-width: thin;
+  width: 60%;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.elf-textBox:focus{
+  outline: 0;
+  box-shadow: 0 0 10px #13848c ;
+
+}
+
+.elf-selector{
+  background-color: white;
+  border-radius: 25px;
+  text-transform: none;
+  border-color: var(--secondry-actions-1-default-fill);
+  min-width: 120px;
+  height: 32px;
+  padding-left: 6px;
+  -webkit-appearance: none;
+  background-image: url(http://micronanomanufacturing.asmedigitalcollection.asme.org/Images/icons/down_caret.png);
+  background-color: white;
+  background-position-x: 90%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
+.elf-selector:focus{
+  outline:none;
+}
+.elf-selector:disabled{
+  background-color:grey;
+}
+
+.elf-hide-element{
+  display: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+@media (max-width: 480px) {
+  .elf-btn-xl {
+    width: 180px;
+    height: 35px;
+    font-size: 11pt;
+    padding: 5px 3px;
+  }
+
+  .elf-btn-lg {
+    width: 100px;
+    height: 25px;
+    font-size: 8pt;
+    padding: 5px 3px;
+  }
+  .btn-lg {
+    font-size: 8.5pt;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .elf-btn-xl {
+    width: 275px;
+    height: 45px;
+    padding: 6px;
+    font-size: 15pt;
+  }
+
+  .elf-btn-lg {
+    width: 150px;
+    height: 45px;
+    padding: 8px;
+    font-size: 15pt;
+  }
+  .btn-lg {
+    font-size: 12pt;
+  }
+}
+
+.elf-trueStories-heading-left {
+  text-align: left;
+}
+
+.elf-trueStories-heading-right {
+  text-align: right;
+}
+
+@media only screen and (max-width : 992px) {
+  .elf-trueStories-heading-left {
+    text-align: center;
+  }
+
+  .elf-trueStories-heading-right {
+    text-align: center;
+  }
+}
+
+html {
+  color: #222;
+  font-weight: 100;
+  font-size: 1em; /* ~16px; */
+  font-family: var(--font-family-base);
+  line-height: 1.375; /* ~22px */
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/*
+ * Browser upgrade prompt
+ * ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/*
+ * Print styles
+ * Inlined to avoid the additional HTTP request:
+ * http://www.phpied.com/delay-loading-your-print-css/
+ * ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

@@ -1,0 +1,112 @@
+@import '../variables.css';
+
+#slideout {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+#slideout_inner {
+  position: inherit;
+  top: inherit;
+  transform: translate(-55px,0px);
+  -webkit-transition-duration: 0.05s;
+  -moz-transition-duration: 0.05s;
+  -o-transition-duration: 0.05s;
+  transition-duration: 0.05s;
+}
+#slideout_inner:hover {
+  transform: translate(0px,0px);
+}
+.slideout-fixed {
+  position: fixed !important;
+  top: 133px !important;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+#meetthestudents {
+  padding-top: 14px;
+  padding-bottom: 55px;
+}
+
+#poolfund {
+  padding-top: 65px;
+  padding-bottom: 90px;
+  /*background-color: deepskyblue;*/
+  /*
+  background-color: #393C41;
+  */
+  background-image: url('/homepage/img-elf-fund-bg.png');
+  background-size: cover;
+  color: #fff;
+}
+
+#truestories {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  background-color: #fff;
+  /*
+  background: url('/homepage/img-vert-line.png') no-repeat center;
+  */
+  background-size: auto 560px;
+}
+
+#howwework {
+  padding-top: 40px;
+  background-color: #ffffff;
+}
+
+#ourpartners {
+  background: white;
+  color: black;
+  padding-top: 50px;
+}
+
+
+#engagewithus {
+}
+
+
+
+h2 {
+  font-size: 35pt;
+  font-weight: 300;
+  text-align: center;
+}
+
+h3 {
+  font-size: 30pt;
+  font-weight: 300;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  #truestories {
+    background: none;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  h2{
+    font-size: 25pt;
+  }
+
+  h3{
+    font-size: 20pt;
+  }
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
